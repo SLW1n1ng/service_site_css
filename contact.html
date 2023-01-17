@@ -4,23 +4,28 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="shortcut icon"
+      href="./Cleaning_img/Cleanig_Logo.png"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="./contact.css">
     <title>Contact</title>
-    <style></style>
   </head>
-  <body style="background-color: rgb(177, 212, 253)">
-    <div>
-      <a href="./Jan3index.html">Home</a><br />
-      <a href="./about.html">About SL Cleaning</a><br />
-      <a href="./pricing.html"></a><br />
+  <body class="main-body">
+    <div class="flex-container">
+      <div><a href="./Jan3index.html">Home</a></div>
+      <div><a href="./about.html">About SL Cleaning</a></div>
+      <div><a href="./pricing.html">Pricing</a></div>
     </div>
     <h2>Please enter you contact info and services required.</h2>
-    <div>
+    <div class="contract-container">
       <form action="./thankyou.html">
-        <fieldset style="background-color: rgb(184, 179, 179)">
+        <fieldset>
           <legend><h2>Service Base Contract</h2></legend>
-          <div>
+          <div class="personal-info">
             <form action="">
-              <fieldset style="background-color: rgb(191, 141, 141)">
+              <fieldset>
                 <legend><h3>Personal Info</h3></legend>
                 <p>
                   <label for="firstname">First name</label>
@@ -32,7 +37,7 @@
                 </p>
               </fieldset>
             </form>
-          </div>     
+          </div>
           <h3>Contact Time</h3>
           <p>
             <input type="radio" id="yesno" name="worktime" value="AM" />
@@ -87,7 +92,12 @@
             value="afterparty"
           />
           <label for="aftparty">After Party</label><br />
-          <input type="checkbox" id="moveout" name="moveout" value="movingout" />
+          <input
+            type="checkbox"
+            id="moveout"
+            name="moveout"
+            value="movingout"
+          />
           <label for="moveout">Move Out</label><br />
           <input
             type="checkbox"
@@ -100,6 +110,5 @@
         </fieldset>
       </form>
     </div>
-    
   </body>
 </html>

@@ -6,35 +6,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link
       rel="shortcut icon"
-      href="./Cleaning_img/3greenicon.jpg"
+      href="./Cleaning_img/Cleanig_Logo.png"
       type="image/x-icon"
     />
+    <link rel="stylesheet" href="./index.css" />
     <title>SL Cleaning</title>
-    <style>
-      .flex-container {
-        background-color: rgb(129, 141, 234);
-        border: 4px solid rgb(10, 10, 160);
-        box-shadow: 5px 5px 5px 5px rgb(59, 59, 212);
-        display: flex;
-        padding: 7px;
-        font-size: 20px;
-        font-weight: bold;
-      }
-      .flex-container > div {
-        border: 3px solid blue;
-        padding: 7px;
-        margin: 5px;
-      }
-    </style>
   </head>
   <header>
     <div class="flex-container">
+      <img
+        src="./Cleaning_img/Cleanig_Logo.png"
+        alt="cleaning Cleaning logo"
+        width="100px"
+      />
       <div><a href="./contact.html"> Enter you contact info </a></div>
-      <div><a href="./pricing.html"> Get an estimate </a></div>
+      <div><a href="./pricing.html"> Pricing </a></div>
       <div><a href="./about.html"> About SL Cleaning </a></div>
     </div>
   </header>
-  <body style="background-color: rgb(177, 212, 253)">
+  <body class="main-body">
     <div>
       <h1>Welcome to SL Cleaning!</h1>
       <img
@@ -51,7 +41,6 @@
           floors and carpets
         </p>
       </div>
-
       <h2>Images of the services we provide</h2>
       <div>
         <img
@@ -70,8 +59,7 @@
           width="33%"
         />
       </div>
-
-      <h2>Videos of our cleaning services</h2>
+      <h2>check out our videos of our cleaning services</h2>
       <div>
         <video width="433" controls>
           <source src="Video_files/Scrub - 34822 (2).mp4" type="video/mp4" />
@@ -104,9 +92,19 @@
   <footer>
     <h2 id="services">Services we provide</h2>
     <ul>
-      <li>Floors</li>
-      <li>Window Cleaning</li>
-      <li>Carpets</li>
+      <li>Outdoor</li>
+      <ul>
+        <li>Pressure Washing</li>
+        <li>Moss Removal</li>
+        <li>Gutters</li>
+        <li>Window Cleaning</li>
+      </ul>
+      <li>Indoor</li>
+      <ul>
+        <li>Floors</li>
+        <li>Window Cleaning</li>
+        <li>Carpets</li>
+      </ul>
     </ul>
   </footer>
 </html>
