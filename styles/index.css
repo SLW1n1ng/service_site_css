@@ -80,16 +80,18 @@
   background-color: rgb(12, 184, 124);
 }
 .main-section-1 {
-  background-color: rgb(38, 66, 149 0.5);
-  background-image: url(./Cleaning_img/splashing-165192_960_720.jpg);
-  background-blend-mode: multiply;
-  height: 600px;
   margin-bottom: 10px;
   background-size: cover;
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
   align-items: center;
+}
+.main-background-image{
+  background-color: rgb(38, 66, 149 0.5);
+  background-image: url(../images/splashing-165192_960_720.jpg);
+  background-blend-mode: multiply;
+  height: 600px;
 }
 .back-img-greeting {
   font-size: 50px;
