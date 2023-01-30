@@ -9,15 +9,28 @@
       href="./Cleaning_img/Cleanig_Logo.png"
       type="image/x-icon"
     />
-    <link rel="stylesheet" href="./contact.css">
+    <link rel="stylesheet" href="./styles/contact.css" />
     <title>Contact</title>
   </head>
   <body class="main-body">
-    <div class="flex-container">
-      <div><a href="./index.html">Home</a></div>
-      <div><a href="./about.html">About SL Cleaning</a></div>
-      <div><a href="./pricing.html">Pricing</a></div>
-    </div>
+    <nav class="nav-container">
+      <ul class="nav-ul-container">
+        <li class="nav-items">
+          <a href="./index.html" class="nav-li-item nav-menu-contact"> home </a>
+        </li>
+        <li class="nav-items">
+          <a href="./pricing.html" class="nav-li-item nav-menu-price">
+            Pricing
+          </a>
+        </li>
+        <li class="nav-items">
+          <a href="./about.html" class="nav-li-item nav-menu-about">
+            About SL Cleaning
+          </a>
+        </li>
+      </ul>
+    </nav>
+
     <h2>Please enter you contact info and services required.</h2>
     <div class="contract-container">
       <form action="./thankyou.html">
@@ -25,7 +38,7 @@
           <legend><h2>Service Base Contract</h2></legend>
           <div class="personal-info">
             <form action="">
-              <fieldset>
+              <fieldset class="personal-info">
                 <legend><h3>Personal Info</h3></legend>
                 <p>
                   <label for="firstname">First name</label>
@@ -36,76 +49,94 @@
                   <input type="text" id="lastname" placeholder="Doe" /><br />
                 </p>
               </fieldset>
+              <fieldset>
+                <legend>Email</legend>
+                <label for="email">email</label>
+                <input type="email" id="email" />
+              </fieldset>
+              <fieldset>
+                <legend>Telephone and Date</legend>
+                <div>
+                  <label for="phone">Phone Number</label>
+                  <input type="tel" id="phone" name="phone-number" />
+                </div>
+                <div>
+                  <label for="day-month">Day and Month</label>
+                  <input type="date" id="day-month" name="day" />
+                </div>
+              </fieldset>
             </form>
           </div>
           <h3>Contact Time</h3>
           <p>
-            <input type="radio" id="yesno" name="worktime" value="AM" />
+            <input type="radio" id="yesno" name="work-time" value="AM" />
             <label for="yesno">AM</label><br />
           </p>
           <p>
-            <input type="radio" id="yesno" name="worktime" value="PM" />
+            <input type="radio" id="yesno" name="work-time" value="PM" />
             <label for="yesno">PM</label><br />
           </p>
           <h3>Select Service</h3>
           <select name="" id="">
             <option value="">Select</option>
-            <option value="outdoorwork">Outdoor</option>
-            <option value="indoorwork">Indoor</option>
+            <option value="outdoor-work">Outdoor</option>
+            <option value="indoor-work">Indoor</option>
           </select>
           <h3>Outdoor Cleaning</h3>
           <input
             type="checkbox"
             id="presswash"
-            name="presswash"
-            value="preswash"
+            name="press-wash"
+            value="pres-wash"
           />
-          <label for="pressurwash">Pressure Washing</label><br />
-          <input type="checkbox" id="moss" name="moss" value="mossremoval" />
-          <label for="moss">Moss Removal</label><br />
+          <label class="check-box" for="pressurwash">Pressure Washing</label
+          ><br />
+          <input type="checkbox" id="moss" name="moss" value="moss-removal" />
+          <label class="check-box" for="moss">Moss Removal</label><br />
           <input
             type="checkbox"
             name="gutters"
             id="gutters"
-            value="gutterclean"
+            value="gutter-clean"
           />
-          <label for="gutters">Gutters</label><br />
+          <label class="check-box" for="gutters">Gutters</label><br />
           <input
             type="checkbox"
             id="windows"
             name="windows"
-            value="windowclean"
+            value="window=clean"
           />
-          <label for="windows">Window Cleaning</label>
+          <label class="check-box" for="windows">Window Cleaning</label>
           <h3>Indoor Cleaning</h3>
           <input
             type="checkbox"
             id="genclean"
-            name="genclean"
-            value="gnrlclean"
+            name="gen=clean"
+            value="gnrl-clean"
           />
-          <label for="genclean">General Clean</label><br />
+          <label class="check-box" for="genclean">General Clean</label><br />
           <input
             type="checkbox"
             id="aftparty"
-            name="aftparty"
-            value="afterparty"
+            name="aft-party"
+            value="after-party"
           />
-          <label for="aftparty">After Party</label><br />
+          <label class="check-box" for="aftparty">After Party</label><br />
           <input
             type="checkbox"
             id="moveout"
-            name="moveout"
-            value="movingout"
+            name="move-out"
+            value="moving-out"
           />
-          <label for="moveout">Move Out</label><br />
+          <label class="check-box" for="moveout">Move Out</label><br />
           <input
             type="checkbox"
             id="deepclean"
-            name="deepclean"
-            value="deepcleaning"
+            name="deep-clean"
+            value="deep-cleaning"
           />
-          <label for="deepclean">Deep Clean</label><br /><br />
+          <label class="check-box" for="deepclean">Deep Clean</label
+          ><br /><br />
           <button type="submit">submit</button>
         </fieldset>
       </form>
