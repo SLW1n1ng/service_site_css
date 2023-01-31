@@ -33,6 +33,7 @@ h2 {
   margin: 3px 3px 3px 3px;
   padding: 3px;
   font-weight: bold;
+  transition: 0.5s;
 }
 .nav-li-item {
   text-decoration: none;
@@ -216,6 +217,7 @@ h2 {
 .ul-li-items {
   display: block;
   position: relative;
+  transition: 0.5s;
 }
 .footer-list-items {
   display: inline;
@@ -226,6 +228,7 @@ h2 {
   font-weight: bold;
 }
 .ul-li-items:hover {
+  transform: translate(2px 2px);
   transform: scale(1.1);
   opacity: 0.5;
 }
