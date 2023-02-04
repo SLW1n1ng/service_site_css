@@ -30,7 +30,7 @@
         </li>
       </ul>
     </nav>
-    <h2>Please enter you contact info and services required.</h2>
+    <h2>Please enter your contact info and services required.</h2>
     <div class="contract-container">
       <form action="./thankyou.html">
         <fieldset>
@@ -40,27 +40,27 @@
               <fieldset class="personal-info">
                 <legend><h3>Personal Info</h3></legend>
                 <p>
-                  <label for="firstname">First name</label>
+                  <label for="firstname" class="first-name">First name</label>
                   <input type="text" id="firstname" placeholder="John" /><br />
                 </p>
                 <p>
-                  <label for="lastname">Last name</label>
+                  <label for="lastname" class="last-name">Last name</label>
                   <input type="text" id="lastname" placeholder="Doe" /><br />
                 </p>
               </fieldset>
               <fieldset>
                 <legend>Email</legend>
-                <label for="email">email</label>
+                <label for="email" class="email-input">email</label>
                 <input type="email" id="email" />
               </fieldset>
               <fieldset>
                 <legend>Telephone and Date</legend>
                 <div>
-                  <label for="phone">Phone Number</label>
+                  <label for="phone" class="phone-input">Phone Number</label>
                   <input type="tel" id="phone" name="phone-number" />
                 </div>
                 <div>
-                  <label for="day-month">Day and Month</label>
+                  <label for="day-month" class="date-input">Day and Month</label>
                   <input type="date" id="day-month" name="day" />
                 </div>
               </fieldset>
@@ -76,7 +76,7 @@
             <label for="yesno">PM</label><br />
           </p>
           <h3>Select Service</h3>
-          <select name="" id="">
+          <select name="select-am-pm" id="select-am-pm">
             <option value="">Select</option>
             <option value="outdoor-work">Outdoor</option>
             <option value="indoor-work">Indoor</option>
@@ -135,8 +135,8 @@
             value="deep-cleaning"
           />
           <label class="check-box" for="deepclean">Deep Clean</label
-          ><br /><br />
-          <button type="submit">submit</button>
+          >
+          <button type="submit" class="submit-button">submit</button>
         </fieldset>
       </form>
     </div>
