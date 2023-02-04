@@ -1,5 +1,4 @@
 * {
-  /* padding: opx; */
   margin: 0px;
 }
 h2 {
@@ -66,7 +65,7 @@ h3 {
 .last-name,
 .date-input,
 .phone-input,
-.email-input{
+.email-input {
   font-weight: bold;
   padding: 5px;
   font-size: 1.2em;
@@ -82,6 +81,7 @@ input[type="text"],
 input[type="email"],
 input[type="tel"],
 input[type="date"] {
+  appearance: none;
   border: 4px solid rgb(6, 5, 5);
   font-size: 20px;
   background-color: rgb(81, 69, 69);
@@ -101,7 +101,7 @@ input[type="tel"]:focus {
   outline: 2px dotted rgb(211, 247, 6);
 }
 input:invalid[type="email"] {
-  border: solid red;
+  border: solid rgb(255, 50, 50);
 }
 input:valid[type="email"] {
   border: solid green;
@@ -119,19 +119,12 @@ input[type="checkbox"] {
   background-repeat: no-repeat;
   background-position-x: -6px;
 }
-
 input[type="checkbox"]:checked {
   background-image: url("../images/green_check_mark.png");
   background-size: contain;
   background-repeat: no-repeat;
   background-position-y: 5px;
   background-position-x: 3px;
-}
-input[type="checkbox"]:checked::after {
-  content: "";
-  display: block;
-  width: 12px;
-  height: 20px;
 }
 .check-box {
   font-weight: bold;
@@ -163,10 +156,8 @@ button[type="submit"] {
   margin: 10px;
   padding: 7px;
 }
-button[type="submit"]:hover {
-  opacity: 0.5;
-  transform: scale(1.2);
-}
+
+button[type="submit"]:hover,
 input[type="text"]:hover,
 input[type="email"]:hover,
 input[type="checkbox"]:hover,
