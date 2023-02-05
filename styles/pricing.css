@@ -1,15 +1,39 @@
 * {
   margin: 0;
+  padding: 0;
+}
+body{
+  box-shadow: inset 0 0 10px rgb(71, 71, 248);
+  height: 100vh;
+  width: 100vw;
+}
+.div-inner-container{
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  height: 100vh;
+  width: 100vw;
+  box-shadow: inset 0 0 50px rgb(136, 136, 252);
+  box-sizing: border-box;
+
 }
 .nav-container {
   background-color: blue;
-  display: block;
-  margin: 0 0 7px 0;
+  display: inline-block;
+  width: 100vw;
+  margin: 0 0 10px 0;
+  padding: 5px;
+  box-shadow: 0 0 10px rgb(88, 88, 255);
+  box-sizing: border-box;
+
 }
 .nav-ul-container {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  width: 100%;
 }
 .nav-items {
   background-color: rgb(64, 64, 255);
@@ -33,13 +57,25 @@ th,
 td {
   border: 3px solid rgb(29, 29, 125);
   border-collapse: collapse;
-  box-shadow: 3px 3px 3px 3px rgb(59, 59, 212);
-  padding: ;
+  box-shadow: 0 0 10px rgb(59, 59, 212);
+  padding: 2%;
 }
 .table-container {
+  border: 2px solid black;
+  display: flex;
   background-color: rgb(134, 144, 223);
   border: 4px solid rgb(10, 10, 160);
   box-shadow: 5px 5px 5px 5px rgb(59, 59, 212);
-  padding: 10px;
-  margin: 5px;
+  padding: 2%;
+  margin: 2%;
+  max-width: 750px;
+}
+.table-tag{
+  padding: 1%;
+  max-width: 750px;
+}
+th, td{
+  min-width: 90px;
+  color: rgb(53, 53, 53);
+  font-size: 1.2em;
 }
