@@ -2,32 +2,32 @@
   margin: 0;
   padding: 0;
 }
-body{
+body {
+  background-color: rgb(177, 212, 253);
   box-shadow: inset 0 0 10px rgb(71, 71, 248);
-  height: 100vh;
+  margin: 0;
   width: 100vw;
-}
-.div-inner-container{
+  height: 100vh;
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
-  justify-content: flex-start;
-  align-items: center;
-  height: 100vh;
-  width: 100vw;
+}
+.div-inner-container {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  height: 100%;
+  width: 100%;
   box-shadow: inset 0 0 50px rgb(136, 136, 252);
   box-sizing: border-box;
-
+  margin: 0;
 }
 .nav-container {
   background-color: blue;
-  display: inline-block;
-  width: 100vw;
+  display: block;
   margin: 0 0 10px 0;
   padding: 5px;
   box-shadow: 0 0 10px rgb(88, 88, 255);
-  box-sizing: border-box;
-
 }
 .nav-ul-container {
   display: flex;
@@ -63,19 +63,51 @@ td {
 .table-container {
   border: 2px solid black;
   display: flex;
+  display: block;
   background-color: rgb(134, 144, 223);
-  border: 4px solid rgb(10, 10, 160);
-  box-shadow: 5px 5px 5px 5px rgb(59, 59, 212);
+  border: 3px solid rgb(10, 10, 160);
+  box-shadow: 0 0 15px rgb(59, 59, 212);
   padding: 2%;
-  margin: 2%;
+  margin: 2% auto 2% auto;
   max-width: 750px;
 }
-.table-tag{
-  padding: 1%;
-  max-width: 750px;
+.table-tag {
+  padding: 0.3%;
+  max-width: 100%;
 }
-th, td{
+th,
+td {
   min-width: 90px;
   color: rgb(53, 53, 53);
   font-size: 1.2em;
+}
+.check-box {
+  font-size: 1.1em;
+  color: rgb(55, 55, 55);
+  text-align: center;
+  padding: 3px;
+}
+input[type="checkbox"] {
+  appearance: none;
+  margin: 4px;
+  width: 30px;
+  height: 30px;
+  border: 2px solid rgb(50, 50, 50);
+  border-radius: 9px;
+  transition: 0.5s;
+  background-image: url("../images/red_check_mark.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position-x: -6px;
+}
+input[type="checkbox"]:checked {
+  background-image: url("../images/green_check_mark.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position-y: 5px;
+  background-position-x: 3px;
+}
+input[type="checkbox"]:hover {
+  opacity: 0.5;
+  transform: scale(1.1);
 }

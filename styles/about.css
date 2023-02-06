@@ -1,10 +1,17 @@
 * {
   margin: 0;
 }
+body {
+  background-color: rgb(182, 182, 255);
+  box-shadow: inset 0 0 15px rgb(111, 111, 252);
+  height: 100vh;
+}
 .nav-container {
-  background-color: blue;
+  background-color: rgb(63, 63, 252);
+  box-shadow: inset 0 0 10px blue;
   display: block;
   margin: 0 0 7px 0;
+  padding: 5px;
 }
 .nav-ul-container {
   display: flex;
@@ -30,10 +37,14 @@
 }
 .body-container {
   background-color: rgb(150, 161, 240);
-  border: 4px solid rgb(10, 10, 160);
-  box-shadow: 5px 5px 5px 5px rgb(59, 59, 212);
+  border: 2px solid rgb(10, 10, 160);
+  box-shadow: 0 0 15px rgb(59, 59, 212);
   padding: 7px;
-  font-size: 20px;
-  margin: 5px;
+  font-size: 1.5em;
+  margin: 5px auto 5px auto;
   max-width: 750px;
+}
+h2, h3, p {
+  padding: 5px;
+  margin: 5px;
 }
